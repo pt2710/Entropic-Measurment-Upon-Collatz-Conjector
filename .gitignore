@@ -1,0 +1,26 @@
+# Byte-compiled / optimized files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+.env
+venv/
+
+# Logs
+*.log
+
+# macOS files
+.DS_Store
+
+# Windows files
+Thumbs.db
+
+# IDE / Editor folders
+.vscode/
+.idea/
+
+*.dat
+*.csv
+*.npz
+*.pkl
