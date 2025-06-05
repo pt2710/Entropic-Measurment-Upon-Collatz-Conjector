@@ -3,12 +3,14 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 
 A collection of scripts for exploring the classic Collatz Conjecture through an entropic lens. The project performs large parameter sweeps, derives entropy based metrics and visualizes the results using both static plots and interactive HTML graphics. Below is a taste of one of the generated cluster plots:
+For a deeper dive into the theory and usage see the [project wiki](docs/README.md).
 
 ![Example clusters](clusters_2d.png)
 
 ## Table of Contents
 - [Background](#background)
 - [Quick Start](#quick-start)
+- [Detailed Documentation](docs/README.md)
 - [Running the Main Script](#running-the-main-script)
 - [Repository Layout](#repository-layout)
 - [Code Overview](#code-overview)
