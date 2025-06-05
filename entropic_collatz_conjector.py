@@ -36,15 +36,9 @@ def S_i(counts: dict[str,int], feature: str) -> float:
     return V0*σ - V0
 
 def piE(S_val: float) -> float:
-    """Compute the \u03c0E value while guarding against overflow."""
-    K_D = math.pi if S_val >= 0 else -math.pi
-    try:
-        delta = math.exp(S_val / K_D)
-    except OverflowError:
-        # exp() overflow \u2192 \u03c0E approaches \u2212\u03c0 for large positive values
-        # and +\u03c0 for large negative values
-        return -math.pi if S_val > 0 else math.pi
-    return math.pi * (1 - delta) / (1 + delta)
+    K_D   = math.pi if S_val>=0 else -math.pi
+    δ     = math.exp(S_val/K_D)
+    return math.pi*(1-δ)/(1+δ)
 
 def H(n: int) -> float:
     return 0.0 if n in LOOP else 1.0
