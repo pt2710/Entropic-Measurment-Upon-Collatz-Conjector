@@ -38,6 +38,7 @@ python entropic_collatz_conjector.py
 
 ## Project Structure
 
+```text
 entropic-collatz-conjector/
 ├── .gitignore
 ├── LICENSE
@@ -46,14 +47,15 @@ entropic-collatz-conjector/
 ├── entropic_collatz_conjector.py
 ├── test_seed.py
 ├── src/
-│ └── your_module.py
+│   └── your_module.py
 ├── configs/
-│ └── default.yaml
+│   └── default.yaml
 ├── tests/
-│ └── test_basic.py
+│   └── test_basic.py
 └── .github/
-└── workflows/
-└── ci.yml
+    └── workflows/
+        └── ci.yml
+```
 
 ---
 
