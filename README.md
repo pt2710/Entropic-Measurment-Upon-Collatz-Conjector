@@ -1,6 +1,10 @@
 # Entropic Collatz Conjector
 
-A collection of scripts for exploring the classic Collatz Conjecture through an entropic lens. The project performs large parameter sweeps, derives entropy based metrics and visualizes the results using both static plots and interactive HTML graphics.
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+
+A collection of scripts for exploring the classic Collatz Conjecture through an entropic lens. The project performs large parameter sweeps, derives entropy based metrics and visualizes the results using both static plots and interactive HTML graphics. Below is a taste of one of the generated cluster plots:
+
+![Example clusters](clusters_2d.png)
 
 ## Table of Contents
 - [Background](#background)
@@ -9,6 +13,7 @@ A collection of scripts for exploring the classic Collatz Conjecture through an 
 - [Repository Layout](#repository-layout)
 - [Code Overview](#code-overview)
 - [Running Tests](#running-tests)
+- [Contributing](#contributing)
 - [License](#license)
 
 ## Background
@@ -96,6 +101,11 @@ pytest -q
 ```
 
 The default test suite includes a few simple checks in `tests/test_basic.py`. If TensorFlow is not installed, the additional tests in `test_seed.py` are skipped automatically.
+
+## Contributing
+Contributions are very welcome! Feel free to open issues or pull requests if you
+spot problems or have ideas for new features. If you find this project useful,
+consider starring the repository on GitHub to help others discover it.
 
 ## License
 This project is licensed under the MIT License. See [LICENSE](LICENSE) for details.
