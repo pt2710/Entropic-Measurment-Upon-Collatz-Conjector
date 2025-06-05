@@ -41,8 +41,19 @@ Thumbs.db
 .idea/
 EOF
 
-# 5. Create requirements.txt
-pip freeze > requirements.txt
+# 5. Create requirements.txt with minimal dependencies
+cat > requirements.txt <<'EOF'
+numpy
+pandas
+matplotlib
+plotly
+scikit-learn
+tqdm
+umap-learn
+joblib
+pytest
+# Optional: tensorflow for advanced features
+EOF
 
 # 6. Create README.md
 cat > README.md << EOF
