@@ -2,10 +2,11 @@ import os, math, time, random
 # Disable oneDNN custom operations
 os.environ['TF_ENABLE_ONEDNN_OPTS'] = '0'
 
-import pytest
-pytest.importorskip("tensorflow")
-
-import tensorflow as tf
+try:
+    import tensorflow as tf
+except ImportError:  # pragma: no cover - optional dependency
+    import pytest
+    pytest.skip("TensorFlow not installed", allow_module_level=True)
 # force a single OpenMP thread to avoid the MKL memory-leak warning
 os.environ["OMP_NUM_THREADS"] = "1"
 import numpy as np
@@ -59,9 +60,13 @@ def S_i(cnts,feature):
     return V0*σ - V0
 
 def piE(Sv):
-    KD=math.pi if Sv>=0 else -math.pi
-    δ=math.exp(Sv/KD)
-    return math.pi*(1-δ)/(1+δ)
+    """Compute \u03c0E with overflow protection."""
+    KD = math.pi if Sv >= 0 else -math.pi
+    try:
+        delta = math.exp(Sv / KD)
+    except OverflowError:
+        return -math.pi if Sv > 0 else math.pi
+    return math.pi * (1 - delta) / (1 + delta)
 
 def H(n): return 0.0 if n in LOOP else 1.0
 
