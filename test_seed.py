@@ -2,6 +2,9 @@ import os, math, time, random
 # Disable oneDNN custom operations
 os.environ['TF_ENABLE_ONEDNN_OPTS'] = '0'
 
+import pytest
+pytest.importorskip("tensorflow")
+
 import tensorflow as tf
 # force a single OpenMP thread to avoid the MKL memory-leak warning
 os.environ["OMP_NUM_THREADS"] = "1"
