@@ -19,6 +19,13 @@ venv\Scripts\activate     # Windows
 pip install -r requirements.txt
 ```
 
+The optional script `test_seed.py` requires TensorFlow. Install it separately if you
+intend to run that script:
+
+```bash
+pip install tensorflow
+```
+
 ---
 
 ## Usage
