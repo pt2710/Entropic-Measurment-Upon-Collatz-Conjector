@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-# Usage: ./prepare_github.sh [repo-slug] [public|private]
-# Example: ./prepare_github.sh entropic-collatz-conjector public
+# Usage: ./setup_github.sh [repo-slug] [public|private]
+# Example: ./setup_github.sh entropic-collatz-conjector public
 
 # 1. Parse arguments
 REPO_SLUG=${1:-entropic-collatz-conjector}
