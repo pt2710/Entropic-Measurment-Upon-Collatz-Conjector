@@ -8,3 +8,4 @@ Welcome to the wiki for the **Entropic Collatz Conjector** project. These pages 
 - [Algorithm notes](algorithm.md)
 - [Visualisations](visualizations.md)
 - [Advanced configuration](advanced.md)
+- [FAQ](faq.md)
