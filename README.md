@@ -1,4 +1,3 @@
-
 # Entropic Measurement Upon Collatz Conjector 🚀
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.15724259.svg)](https://doi.org/10.5281/zenodo.15724259)
@@ -9,9 +8,9 @@ This project implements a novel **entropy-based framework** for the Collatz conj
 
 *Figure: Spiral cluster of parity-adjusted entropic features (illustrative). The repository’s analysis shows that Collatz seeds form fractal “spiral” clusters in the parity–entropy space.* Each orbit’s even/odd fluctuations are captured by the pDFI (a two-dimensional feature vector). Applying the elastic–π phase transform yields an **elastic–π norm** \(\widehat{\pi}_E(n)\) for each number, and the stability functional
 
-\[
-\widetilde{H}(n,t) = H(n)\, (|\pi_{E1}(t)|+|\pi_{E2}(t)|)
-\]
+
+H̃(n,t) = H(n) · (|π_E1(t)| + |π_E2(t)|)
+
 
 is constructed to strictly decrease with each odd–even step. This analytically forces all orbits into the trivial cycle. Remarkably, plotting the elastic–π norms of seeds reveals four distinct attractor clusters (with spiral-like geometry) under k-means clustering. These clusters greatly simplify the parity–entropy landscape and confirm the underlying “evenness bias” in Collatz orbits.
 
@@ -66,3 +65,17 @@ This project is licensed under the **Creative Commons Attribution 4.0 (CC BY 4.0
 ---
 
 📧 **Contact**: [thenothingnesseffect@gmail.com](mailto:thenothingnesseffect@gmail.com)
+---
+
+## 📄 Supplementary Project Metadata
+
+This repository includes additional metadata and contribution guidelines:
+
+- [`AUTHORS.md`](./AUTHORS.md) — Project authorship and contact details.
+- [`CONTRIBUTING.md`](./CONTRIBUTING.md) — How to contribute code, issues, and improvements.
+- [`CODE_OF_CONDUCT.md`](./CODE_OF_CONDUCT.md) — Code of conduct for community members.
+- [`SECURITY.md`](./SECURITY.md) — Responsible disclosure and vulnerability reporting.
+- [`CITATION.cff`](./CITATION.cff) — Citation metadata for scholarly reference.
+- [`MAINTAINERS.md`](./MAINTAINERS.md) — Maintainers responsible for this repository.
+
+---
