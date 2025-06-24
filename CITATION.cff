@@ -1,0 +1,11 @@
+cff-version: 1.2.0
+message: "If you use this work, please cite it as below."
+authors:
+  - family-names: McCrackn
+    given-names: Budd
+    orcid: https://orcid.org/0009-0001-4400-0171
+title: "Entropic Measurement Upon Collatz Conjector"
+doi: 10.5281/zenodo.15724259
+date-released: 2025-06-24
+license: CC-BY-4.0
+repository-code: https://github.com/pt2710/Entropic-Measurment-Upon-Collatz-Conjector
