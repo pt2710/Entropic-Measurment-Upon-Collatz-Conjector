@@ -6,7 +6,7 @@ This project implements a novel **entropy-based framework** for the Collatz conj
 
 ## Methodology 📊
 
-*Figure: Spiral cluster of parity-adjusted entropic features (illustrative). The repository’s analysis shows that Collatz seeds form fractal “spiral” clusters in the parity–entropy space.* Each orbit’s even/odd fluctuations are captured by the pDFI (a two-dimensional feature vector). Applying the elastic–π phase transform yields an **elastic–π norm** \(\widehat{\pi}_E(n)\) for each number, and the stability functional
+*Figure: Spiral cluster of parity-adjusted entropic features (illustrative). The repository’s analysis shows that Collatz seeds form fractal “spiral” clusters in the parity–entropy space.* Each orbit’s even/odd fluctuations are captured by the pDFI (a two-dimensional feature vector). Applying the elastic–π phase transform yields an **elastic–π norm** π_E for each number, and the stability functional
 
 
 H̃(n,t) = H(n) · (|π_E1(t)| + |π_E2(t)|)
